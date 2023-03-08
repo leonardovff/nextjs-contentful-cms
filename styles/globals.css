@@ -36,3 +36,11 @@ button {
   padding: 0.5rem 1rem;
   font-weight: bold;
 }
+
+.swiper-wrapper {
+  padding-bottom: 35px;
+}
+.swiper-container-horizontal > .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+}
