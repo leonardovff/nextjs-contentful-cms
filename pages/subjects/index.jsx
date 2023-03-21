@@ -9,6 +9,7 @@ import Head from 'next/head';
 import Layout from '../../components/layout';
 import { getSubjectLists } from '../../modules/subject';
 import { Subjects } from '../../components/subjects';
+import { Login } from "../../components/login";
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -18,7 +19,6 @@ const Title = styled.h1`
 const ThemeContext = React.createContext('light');
 
 function Father({teste, children}){
-    console.log(teste);
     return <>{children}</>;
 }
 function ChildA({children}){
@@ -35,10 +35,12 @@ function ChildC({children}){
 
 export default function SubjectsPage ({subjects}) {
     const teste= 'olá';
+    
     return <Layout>
         <Head>
             <title>List of Subjects</title>
         </Head>
+        <Login/>
         <Title>Subjects</Title>
         <Link href="/">Back to home</Link>
         <Subjects subjects={subjects}></Subjects>
