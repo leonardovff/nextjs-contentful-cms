@@ -3,7 +3,6 @@ import Image from 'next/image';
 import styles from './subject-card.module.css';
 
 export function SubjectCard({ id, title, trumb, shortDescription }){
-    console.log('here',id);
     return (<>
         <li key={id} className={styles.container}>
             <Image
