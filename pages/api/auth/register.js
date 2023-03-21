@@ -10,7 +10,7 @@ export default function handler({ body, method}, res){
     }
    
     var params = {
-        ClientId: process.env.AWS_CLIENT_ID,
+        ClientId: process.env.AWS_COGNITO_CLIENT_ID,
         Username: email,
         Password: password,
         SecretHash: getCognitoSecretHash(email),

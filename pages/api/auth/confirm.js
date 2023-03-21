@@ -10,7 +10,7 @@ export default async function handler({ method, body }, res){
     return res.status(401).json({ message: 'Email and code are required' });
   }
   var params = {
-    ClientId: process.env.AWS_CLIENT_ID,
+    ClientId: process.env.AWS_COGNITO_CLIENT_ID,
     Username: email,
     ConfirmationCode: code,
     SecretHash: getCognitoSecretHash(email),
