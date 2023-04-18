@@ -44,3 +44,7 @@ button {
     position: absolute;
     bottom: 0;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
